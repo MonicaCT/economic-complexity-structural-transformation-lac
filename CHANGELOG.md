@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.0.1] - 2026-07-11
+
+### Changed
+- Administrative release created to trigger Zenodo archival after repository integration was enabled.
+- No scientific results, methods, data, models, figures or interpretations were modified.
 ## [1.0.0] - 2026-07-11
 
 ### Added

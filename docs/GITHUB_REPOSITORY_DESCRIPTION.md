@@ -4,6 +4,13 @@
 
 Reproducible R analysis of economic complexity, structural transformation and Bolivia diversification opportunities in Latin America.
 
+## Stable release
+
+- Version: 1.0.0
+- Release title: Economic Complexity and Structural Transformation in Latin America — v1.0.0
+- Release date: 2026-07-11
+- DOI: pending Zenodo deposition
+
 ## GitHub About
 
 Local-data economic complexity workflow linking Latin American structural transformation patterns to a cautious Bolivia Product Space opportunity screen.

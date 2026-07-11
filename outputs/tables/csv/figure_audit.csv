@@ -1,0 +1,12 @@
+figure,purpose,png_path,pdf_path,png_exists,pdf_exists,png_size_bytes,pdf_size_bytes,status
+01_eci_latin_america_trends,regional complexity trends,outputs/figures/png/01_eci_latin_america_trends.png,outputs/figures/pdf/01_eci_latin_america_trends.pdf,TRUE,TRUE,639733,26215,PASS
+02_complexity_income,complexity-income relationship,outputs/figures/png/02_complexity_income.png,outputs/figures/pdf/02_complexity_income.pdf,TRUE,TRUE,42710,17296,PASS
+03_diversity_concentration,diversity-concentration map,outputs/figures/png/03_diversity_concentration.png,outputs/figures/pdf/03_diversity_concentration.pdf,TRUE,TRUE,140842,29988,PASS
+04_lac_export_composition,export composition,outputs/figures/png/04_lac_export_composition.png,outputs/figures/pdf/04_lac_export_composition.pdf,TRUE,TRUE,88201,25678,PASS
+05_bolivia_structural_dashboard,Bolivia dashboard,outputs/figures/png/05_bolivia_structural_dashboard.png,outputs/figures/pdf/05_bolivia_structural_dashboard.pdf,TRUE,TRUE,314710,26077,PASS
+06_bolivia_product_space,Product Space visual network,outputs/figures/png/06_bolivia_product_space.png,outputs/figures/pdf/06_bolivia_product_space.pdf,TRUE,TRUE,393189,58508,PASS
+07_bolivia_density_pci,density-PCI opportunity cloud,outputs/figures/png/07_bolivia_density_pci.png,outputs/figures/pdf/07_bolivia_density_pci.pdf,TRUE,TRUE,479610,58482,PASS
+08_bolivia_opportunity_matrix,feasibility-transformation matrix,outputs/figures/png/08_bolivia_opportunity_matrix.png,outputs/figures/pdf/08_bolivia_opportunity_matrix.pdf,TRUE,TRUE,663984,60527,PASS
+09_bolivia_top_opportunities,top transformation opportunities,outputs/figures/png/09_bolivia_top_opportunities.png,outputs/figures/pdf/09_bolivia_top_opportunities.pdf,TRUE,TRUE,164713,27251,PASS
+10_model_coefficients,econometric coefficients,outputs/figures/png/10_model_coefficients.png,outputs/figures/pdf/10_model_coefficients.pdf,TRUE,TRUE,74154,22148,PASS
+bolivia_peer_trajectories,peer ECI trajectories,outputs/figures/png/bolivia_peer_trajectories.png,outputs/figures/pdf/bolivia_peer_trajectories.pdf,TRUE,TRUE,309111,21423,PASS

@@ -1,0 +1,37 @@
+# Dashboard Manual Review
+
+Final status: WARNING
+
+| Module | Action tested | Expected result | Observed result | Status | Correction |
+|---|---|---|---|---|---|
+| Dashboard launch | Open app with shinytest2/Chromote | App loads on local 127.0.0.1 URL | http://127.0.0.1:6230/ | PASS | None |
+| Executive Overview | Read validation cards and trend page | Bolivia cards, counts and trends visible | Metrics, tabs and overview visible; screenshot saved. | PASS | None |
+| Executive Overview | Map layer check | If geospatial data exist, map should render | No geospatial public output is included; dashboard uses trend/ranking views instead. | WARNING | Documented as not applicable rather than adding an unsupported map. |
+| Executive Overview | Opportunity counts ranking | Category counts are visible | Panel countries: 242  Years: 1995 - 2023  Bolivia latest year: 2023  Opportunity candidates: 1138 | PASS | None |
+| Country Explorer | Select country BOL | Country snapshot and time series update | Latest year: 2023  ECI: -1.236  Diversity: 82  HHI: 0.124  Primary share: 62.7% | PASS | None |
+| Country Explorer | Select country BRA | Country snapshot and time series update | Latest year: 2023  ECI: -0.253  Diversity: 190  HHI: 0.057  Primary share: 68.9% | PASS | None |
+| Country Explorer | Select country MEX | Country snapshot and time series update | Latest year: 2023  ECI: 0.94  Diversity: 177  HHI: 0.037  Primary share: 13.2% | PASS | None |
+| Country Explorer | Select country CHL | Country snapshot and time series update | Latest year: 2023  ECI: -0.528  Diversity: 121  HHI: 0.105  Primary share: 54.4% | PASS | None |
+| Country Explorer | Switch indicator eci | Indicator control updates plot/table without error | Indicator set to eci | PASS | None |
+| Country Explorer | Switch indicator diversity | Indicator control updates plot/table without error | Indicator set to diversity | PASS | None |
+| Country Explorer | Switch indicator hhi | Indicator control updates plot/table without error | Indicator set to hhi | PASS | None |
+| Country Explorer | Switch indicator primary_share | Indicator control updates plot/table without error | Indicator set to primary_share | PASS | None |
+| Product Explorer | Select product 3926 | Product description, PCI/ubiquity series and table visible | Product 3926 visible in page text. | PASS | None |
+| Product Explorer | Select product 7326 | Product description, PCI/ubiquity series and table visible | Product 7326 visible in page text. | PASS | None |
+| Product Explorer | Select product 8419 | Product description, PCI/ubiquity series and table visible | Product 8419 visible in page text. | PASS | None |
+| Product Explorer | Switch product metric pci_final | Product metric updates without error | Product metric set to pci_final | PASS | None |
+| Product Explorer | Switch product metric ubiquity | Product metric updates without error | Product metric set to ubiquity | PASS | None |
+| Product Explorer | Switch product metric world_export_value | Product metric updates without error | Product metric set to world_export_value | PASS | None |
+| Product Space | Open Product Space tab | Static Product Space network, diagnostics and opportunity overlay visible | Product Space tab visible; screenshot saved. | PASS | None |
+| Product Space | Filter overlay Strategic bets | Opportunity overlay updates without freezing | Overlay category set to Strategic bets | PASS | None |
+| Product Space | Filter overlay Incremental extensions | Opportunity overlay updates without freezing | Overlay category set to Incremental extensions | PASS | None |
+| Product Space | Filter overlay Transformational long shots | Opportunity overlay updates without freezing | Overlay category set to Transformational long shots | PASS | None |
+| Bolivia Opportunity Lab | Strategic bets filter | Strategic bets, scores, rankings and table visible | Strategic bets filter visible; screenshot saved. | PASS | None |
+| Bolivia Opportunity Lab | Sector filter | Sector filter applies without error | Sector filter set to Animal products | PASS | None |
+| Bolivia Opportunity Lab | Download filtered table | CSV download is produced | Download file exists: bolivia_filtered_opportunities.csv size bytes: 501 | PASS | None |
+| Econometric Evidence | Open coefficients and table | Coefficient plot, non-causal note and table visible | Econometric tab visible with non-causal note. | PASS | None |
+| Data and Methods | Open definitions and validation links | Definitions, methodology and limitations visible | Data and Methods tab visible. | PASS | None |
+| Responsive sizing | Resize viewport | Dashboard remains readable at narrower width | Mobile-width screenshot saved. | PASS | None |
+| Console/logs | Inspect browser logs | No console errors | No console errors detected by AppDriver log scan. | PASS | None |
+
+Method: local Shiny app opened with shinytest2/Chromote. Screenshots are stored in `outputs/reports/visual/`. No raw data rebuild or metric recalculation was performed.

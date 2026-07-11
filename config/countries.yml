@@ -1,0 +1,28 @@
+bolivia: BOL
+latin_america:
+  - ARG
+  - BOL
+  - BRA
+  - CHL
+  - COL
+  - CRI
+  - ECU
+  - SLV
+  - GTM
+  - HND
+  - MEX
+  - NIC
+  - PAN
+  - PRY
+  - PER
+  - DOM
+  - URY
+  - VEN
+comparators:
+  - KOR
+  - CHN
+  - VNM
+  - MYS
+  - THA
+  - TUR
+  - ZAF

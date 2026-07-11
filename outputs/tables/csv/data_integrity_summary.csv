@@ -1,0 +1,14 @@
+metric,value
+rows,6497429
+countries,242
+products,1243
+min_year,1995
+max_year,2023
+bolivia_latest_year,2023
+unique_keys,1
+negative_exports,0
+duplicate_keys,0
+missing_rca,0
+invalid_country_codes,0
+invalid_product_codes,2991
+zero_export_country_year_rows,14

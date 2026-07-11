@@ -1,0 +1,120 @@
+<!doctype html><html><head><meta charset="utf-8"><title>README visual check</title><style>body{font-family:Arial,sans-serif;max-width:980px;margin:32px auto;line-height:1.55}img{max-width:100%;border:1px solid #ddd}pre{background:#f7f7f7;padding:12px;overflow:auto}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:5px}</style></head><body>
+<h1>Economic Complexity and Structural Transformation in Latin America</h1>
+<p><strong>Productive capabilities, divergent development paths and diversification opportunities for Bolivia</strong></p>
+<p>Repository: <a href="https://github.com/MonicaCT/economic-complexity-structural-transformation-lac">https://github.com/MonicaCT/economic-complexity-structural-transformation-lac</a></p>
+<p><img src="docs/assets/repository_banner.png" alt="Repository banner" /></p>
+<h2>Research question</h2>
+<p>How do economic complexity, export diversification and Product Space proximity characterize divergent structural transformation patterns in Latin America, and what do they imply for Bolivia's feasible diversification opportunities?</p>
+<h2>Why this project matters</h2>
+<p>Latin America's development challenge is not only to grow, but to build broader productive capabilities. Bolivia illustrates the policy tension clearly: many high-transformation products are distant from the current export basket, while nearby products may offer limited upgrading. This repository turns local trade and macro data into a reproducible complexity workflow, validates the main indicators and translates product-level metrics into cautious screening tools for further sector research.</p>
+<h2>Key findings</h2>
+<ul>
+<li>The processed panel covers 6,497,429 country-product-year observations, 242 countries, 1,243 HS92 four-digit products and 1995-2023.</li>
+<li>Bolivia 2023 records ECI = -1.236, diversity = 82, HHI = 0.124 and primary export share = 62.7 percent.</li>
+<li>Bolivia's HHI is slightly above the regional median reported in validation outputs; concentration is interpreted comparatively, not in isolation.</li>
+<li>The 2023 Product Space has 701,978 analytical positive edges and a 698-edge visual subset; density uses the analytical matrix.</li>
+<li>The relative opportunity screen identifies 11 strategic bets, 239 incremental extensions, 107 transformational long shots, 454 middle-range candidates, 41 low-priority products and 286 excluded candidates.</li>
+<li>Fixed-effects models are observational associations with country and year fixed effects; they are not causal estimates.</li>
+</ul>
+<h2>Bolivia at a glance</h2>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th align="right">Value</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ECI 2023</td>
+<td align="right">-1.236</td>
+<td>Relative annual complexity position.</td>
+</tr>
+<tr>
+<td>Diversity</td>
+<td align="right">82</td>
+<td>HS4 products with RCA &gt;= 1.</td>
+</tr>
+<tr>
+<td>HHI</td>
+<td align="right">0.124</td>
+<td>Slightly above the reported regional median of 0.118.</td>
+</tr>
+<tr>
+<td>Primary export share</td>
+<td align="right">62.7%</td>
+<td>Resource and primary-product orientation remains important.</td>
+</tr>
+<tr>
+<td>Strategic bets</td>
+<td align="right">11</td>
+<td>Relative screening candidates, not automatic recommendations.</td>
+</tr>
+<tr>
+<td>Incremental extensions</td>
+<td align="right">239</td>
+<td>Nearer products that may support learning and export continuity.</td>
+</tr>
+</tbody>
+</table>
+<h2>Main figures</h2>
+<p><img src="outputs/figures/png/01_eci_latin_america_trends.png" alt="ECI trajectories" /></p>
+<p><img src="outputs/figures/png/06_bolivia_product_space.png" alt="Bolivia Product Space" /></p>
+<p><img src="outputs/figures/png/08_bolivia_opportunity_matrix.png" alt="Opportunity matrix" /></p>
+<p><img src="outputs/figures/png/09_bolivia_top_opportunities.png" alt="Top opportunities" /></p>
+<p><img src="outputs/figures/png/10_model_coefficients.png" alt="Model coefficients" /></p>
+<h2>Methodology</h2>
+<pre><code class="language-mermaid">flowchart LR
+  A[Local HS92 trade data] --&gt; B[RCA and MCP matrix]
+  B --&gt; C[ECI, diversity, ubiquity]
+  B --&gt; D[Product Space proximity]
+  D --&gt; E[Density and Opportunity Gain]
+  C --&gt; F[Regional patterns and models]
+  E --&gt; G[Bolivia opportunity screen]
+  G --&gt; H[Absolute and relative classifications]
+</code></pre>
+<p>The analysis uses established economic-complexity methods. ECI is standardized within each year, so longitudinal movement is interpreted as relative annual position. Product rankings are analytical screening tools rather than investment prescriptions.</p>
+<h2>Interactive dashboard</h2>
+<p><img src="docs/assets/dashboard_preview.png" alt="Dashboard preview" /></p>
+<p>The Shiny dashboard runs locally and includes regional ECI trajectories, a Bolivia Opportunity Lab, Product Space diagnostics, econometric model tables and validation notes.</p>
+<pre><code class="language-powershell">Rscript scripts/run_dashboard.R
+</code></pre>
+<h2>Paper and outputs</h2>
+<ul>
+<li><a href="paper/main.html">Working paper HTML</a></li>
+<li><a href="paper/main.pdf">Working paper PDF</a></li>
+<li><a href="paper/policy_brief.html">Policy brief</a></li>
+<li><a href="outputs/tables/xlsx/bolivia_opportunities_revised.xlsx">Revised Bolivia opportunities workbook</a></li>
+<li><a href="outputs/reports/FINAL_REPOSITORY_CHECK.md">Final repository check</a></li>
+</ul>
+<p>If PDF artifacts are absent after cloning, regenerate them with <code>Rscript scripts/render_paper.R</code>.</p>
+<h2>Repository structure</h2>
+<pre><code class="language-text">R/                  Main R pipeline and demo script
+scripts/            Validation, rendering and final-check scripts
+data/sample/        Small public sample data
+docs/               Audits, methodology and GitHub preparation notes
+docs/assets/        Repository banner and dashboard preview
+outputs/            Final figures, reports and small tables
+paper/              Working paper, appendix, policy brief and references
+dashboard/          Local Shiny dashboard
+config/             Example configuration files
+tests/              Lightweight validation tests
+</code></pre>
+<h2>Reproducibility</h2>
+<ul>
+<li>Demo: <code>Rscript R/98_run_demo.R</code> uses only public samples.</li>
+<li>Processed-output validation: run Phase 2/3 scripts without scanning raw folders.</li>
+<li>Full rebuild: copy <code>config/paths.example.yml</code> to ignored <code>config/paths.local.yml</code>, edit local paths and run <code>Rscript R/99_run_all.R</code>.</li>
+</ul>
+<h2>Data availability</h2>
+<p>The original local source folders contain roughly 168.3 GB and are not included in GitHub. Large processed caches are also ignored. Public samples and validation outputs are included so the repository can be inspected without private local data.</p>
+<h2>Limitations</h2>
+<p>The project uses export data, so it does not observe non-exported capabilities, services, informal production, environmental constraints, firm-level readiness or political economy. Opportunity scores guide screening; they do not select investments. Econometric models are descriptive associations, not causal estimates.</p>
+<h2>Citation</h2>
+<p>Use <code>CITATION.cff</code> for citation metadata. No DOI is listed because no DOI has been created.</p>
+<h2>Author</h2>
+<p>Monica Cueto Tapia<br />
+Applied Economist | Development Analytics | Economic Complexity | Public Policy | Data Science</p>
+
+</body></html>

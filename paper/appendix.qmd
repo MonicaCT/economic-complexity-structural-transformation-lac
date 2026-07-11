@@ -1,0 +1,24 @@
+---
+title: "Appendix"
+format: html
+---
+
+# Appendix A. Technical Notes
+
+This appendix summarizes details that support the main paper without overloading the narrative. Full validation evidence is stored in the `docs/` and `outputs/tables/csv/` folders.
+
+## RCA and MCP
+
+RCA is computed as the country-product export share divided by the world product export share. MCP equals one when RCA is at least one and zero otherwise.
+
+## ECI and PCI
+
+ECI is recomputed by year and standardized within each annual distribution. Longitudinal changes describe relative position. PCI is an internal projection from country ECI to products.
+
+## Product Space
+
+The analytical Product Space for 2023 contains 701,978 positive edges. The 698-edge graph is a visual subset. Density and Opportunity Gain are computed from the analytical matrix.
+
+## Models
+
+Fixed-effects models include country and year fixed effects with country-clustered standard errors. They are descriptive and not causal.

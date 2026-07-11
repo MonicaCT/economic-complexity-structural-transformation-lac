@@ -1,0 +1,12 @@
+# Response To Reviewer
+
+| Comment ID | Reviewer comment | Priority | Accepted or rejected | Action taken | Files modified | Reason | Status |
+|---|---|---|---|---|---|---|---|
+| R1-C1 | Manuscript is too short. | High | Accepted | Expanded paper to requested working-paper length and final structure. | `paper/main.qmd`, `paper/main.html`, `paper/main.pdf` | The concern was valid and did not require new analysis. | Done |
+| R1-C2 | Contribution is not sharply positioned. | High | Accepted | Added explicit contribution framing and research contribution note. | `paper/main.qmd`, `paper/research_contribution.md`, `README.md` | Clarifies that contribution is empirical and reproducible, not a new estimator. | Done |
+| R1-C3 | Conceptual distinctions are underdeveloped. | High | Accepted | Added conceptual definitions table and conceptual framework expansion. | `paper/tables/conceptual_definitions.*`, `paper/main.qmd` | Prevents conflating growth, development, complexity and feasibility. | Done |
+| R1-C4 | ECI temporal comparability needs emphasis. | High | Accepted | Updated methodology and ECI validation notes; paper states annual relative interpretation. | `docs/METHODOLOGY.md`, `docs/ECI_PCI_TECHNICAL_VALIDATION.md`, `paper/main.qmd`, `README.md` | Annual standardization limits absolute longitudinal interpretation. | Done |
+| R1-C5 | Opportunity rankings may be misread as prescriptions. | High | Accepted | Added visible screening-tool warnings in paper, README, policy brief and dashboard. | `paper/main.qmd`, `paper/policy_brief.qmd`, `README.md`, `dashboard/app.R` | Rankings omit firm, infrastructure, environmental and political-economy constraints. | Done |
+| R1-C6 | References are not publication-ready. | Medium | Accepted | Kept only verified local dataset entries in BibTeX and created reference audit. | `paper/references.bib`, `paper/references_to_verify.md`, `docs/REFERENCE_AUDIT.md` | No web search or invented bibliography allowed. | Done |
+| R1-C7 | README is too sparse. | Medium | Accepted | Rebuilt README with banner, key findings, figures, methodology diagram, dashboard, outputs and limitations. | `README.md`, `docs/assets/*` | Public repository should be understandable quickly. | Done |
+| R1-M1 | Run new models for stronger claims. | Medium | Rejected | No new models run. | None | Phase 3 rules prohibit new econometric models unless indispensable; no methodological error was found. | Rejected with reason |

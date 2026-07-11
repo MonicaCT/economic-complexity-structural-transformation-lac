@@ -1,0 +1,9 @@
+variable,rows,missing_or_nonfinite,share_missing_or_nonfinite
+log_gdppc,783,60,0.0766283524904215
+growth_f5,783,195,0.24904214559387
+growth_volatility,783,111,0.14176245210728
+eci,783,0,0
+hhi,783,0,0
+diversity,783,0,0
+primary_share,783,0,0
+manufacturing_share,783,0,0

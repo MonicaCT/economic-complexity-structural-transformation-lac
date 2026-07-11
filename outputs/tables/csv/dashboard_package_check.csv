@@ -1,0 +1,6 @@
+package,available
+shiny,TRUE
+data.table,TRUE
+ggplot2,TRUE
+plotly,TRUE
+DT,TRUE

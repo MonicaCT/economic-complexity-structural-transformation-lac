@@ -1,0 +1,6 @@
+classification: HS92
+product_level: 4
+rca_threshold: 1
+robustness_rca_threshold: 0.75
+product_space_threshold: 0.55
+bolivia_reference_year: 2023

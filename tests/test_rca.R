@@ -1,0 +1,5 @@
+library(data.table)
+root <- normalizePath(getwd(), winslash = "/", mustWork = FALSE)
+trade <- as.data.table(arrow::read_parquet(file.path(root, "data/processed/trade_country_product_year.parquet")))
+stopifnot(all(is.finite(trade$rca) | is.na(trade$rca)))
+stopifnot(all(trade$mcp %in% c(0L, 1L)))

@@ -1,0 +1,9 @@
+colors:
+  bolivia: '#C00000'
+  regional_median: '#1F4E79'
+  comparator: '#6C8EBF'
+  muted: '#B7B7B7'
+figures:
+  dpi: 180
+  width: 8
+  height: 5

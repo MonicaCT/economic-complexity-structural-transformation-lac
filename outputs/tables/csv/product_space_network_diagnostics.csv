@@ -1,0 +1,13 @@
+metric,value
+year,2023
+products,1220
+countries,235
+analytical_positive_edges,701978
+visual_edges,698
+visual_threshold,0.55
+phi_min,0
+phi_max,0.808510638297872
+diag_max_abs,0
+symmetry_max_abs_diff,0
+duplicate_visual_edges,0
+visual_isolated_products,875

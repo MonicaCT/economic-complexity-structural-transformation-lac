@@ -1,0 +1,8 @@
+library(data.table)
+root <- normalizePath(file.path(getwd()), winslash = "/", mustWork = FALSE)
+trade_file <- file.path(root, "data/processed/trade_country_product_year.parquet")
+stopifnot(file.exists(trade_file))
+trade <- as.data.table(arrow::read_parquet(trade_file))
+stopifnot(nrow(trade) > 0)
+stopifnot(all(trade$export_value >= 0, na.rm = TRUE))
+stopifnot(!anyDuplicated(trade[, .(country_code, product_code, year)]))

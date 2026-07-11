@@ -1,0 +1,8 @@
+area,status,detail
+required_files,PASS,All priority files are present.
+figures,PASS,11/11 figure records pass.
+tests,PASS,7/7 tests pass.
+paper_length,WARNING,"Status: WARNING. The manuscript is a complete working draft but below the 7,000-word journal-article target."
+local_paths,PASS,No user-specific absolute paths found outside config/paths.local.yml.
+gitignore,PASS,"Checks config local, raw data, processed parquet, and PDF ignore rules."
+large_files,PASS,Large files are limited to expected ignored artifacts.

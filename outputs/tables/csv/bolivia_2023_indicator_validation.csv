@@ -1,0 +1,5 @@
+indicator,reported_value,recalculated_value,definition,numerator,denominator,source_processed,observations
+ECI,-1.235808,-1.23580815913559,standardized country eigenvector,,,data/processed/trade_country_product_year.parquet,relative within year
+Diversity,82,82,count of HS4 RCA>=1 products,82,1128,data/processed/trade_country_product_year.parquet,HS92 4-digit
+HHI,0.1243863,0.124386325577729,sum of squared HS4 export shares,,10369618759,data/processed/trade_country_product_year.parquet,regional median HHI=0.118; percentile=0.593; rank=16
+Primary export share,0.6267532,0.62675317377114,share of exports in primary HS sections,6499191468,10369618759,data/processed/trade_country_product_year.parquet,"primary sections include agriculture, food, fats/oils, minerals"

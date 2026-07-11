@@ -1,0 +1,12 @@
+OLS estimation, Dep. Var.: gdp_pc_ppp_growth_f5
+Observations: 563
+Fixed-effects: country_code: 26,  year: 22
+Standard-errors: Clustered (country_code) 
+                  Estimate Std. Error   t value  Pr(>|t|)    
+eci               3.060146    1.01553  3.013359 0.0058473 ** 
+hhi               9.122081    6.22896  1.464462 0.1555306    
+log1p(diversity) -0.129578    2.37744 -0.054503 0.9569674    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 2.35134     Adj. R2: 0.304947
+                Within R2: 0.07864 

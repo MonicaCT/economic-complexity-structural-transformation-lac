@@ -1,0 +1,6 @@
+project_root: "/path/to/economic-complexity-structural-transformation-lac"
+source_roots:
+  part_i: "/path/to/Datos_papers_PART-I"
+  part_ii: "/path/to/Datos_papers_PART-II"
+atlas_dir: "/path/to/Datos_papers_PART-II/53_Harvard - ATLAS"
+cepii_macro: "/path/to/Datos_papers_PART-I/10_CEPII Gravity/output_country_year/cepii_gravity_country_year.csv"

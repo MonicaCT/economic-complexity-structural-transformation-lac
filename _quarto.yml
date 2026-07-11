@@ -1,0 +1,10 @@
+project:
+  type: default
+  output-dir: paper
+
+format:
+  html:
+    toc: true
+    theme: cosmo
+  pdf:
+    toc: true

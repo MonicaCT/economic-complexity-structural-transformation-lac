@@ -1,0 +1,26 @@
+---
+title: "Bolivia Productive Capabilities And Diversification Screen"
+format: html
+---
+
+# Policy Brief
+
+## Diagnosis
+
+Bolivia's validated 2023 export indicators show ECI = -1.236, 82 HS4 products with RCA >= 1, HHI = 0.124 and primary export share = 62.7 percent. These figures indicate a constrained productive position relative to more complex regional economies, but they do not imply immobility.
+
+## Evidence
+
+The Product Space analysis suggests that many high-transformation products are distant from Bolivia's current RCA basket. Under conservative absolute thresholds, close high-complexity opportunities are scarce. A relative Bolivia-specific screen identifies 11 strategic bets, 239 incremental extensions, 107 transformational long shots, 454 middle-range candidates, 41 low-priority products and 286 excluded products.
+
+## Interpretation
+
+Product-level rankings should be interpreted as analytical screening tools rather than investment prescriptions. They do not incorporate firm capabilities, infrastructure constraints, environmental impacts, political economy, financing needs or detailed demand conditions.
+
+## Policy Use
+
+- Use incremental extensions to identify near-term learning and supplier-development opportunities.
+- Use strategic bets to select candidates for deeper sector feasibility studies.
+- Treat transformational long shots as longer-horizon capability-building questions.
+- Prioritize public goods such as standards, logistics, technical training, export information and coordination before sector-specific support.
+- Evaluate pilots transparently and avoid treating Product Space rankings as automatic subsidy lists.

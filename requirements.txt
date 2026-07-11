@@ -1,0 +1,6 @@
+# Python is not required for the primary R workflow.
+# This file is included for repository completeness and future optional utilities.
+pandas
+pyarrow
+openpyxl
+networkx

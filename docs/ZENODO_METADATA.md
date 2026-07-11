@@ -45,8 +45,15 @@ This release provides a reproducible research software repository for studying e
 
 MIT
 
-## Related identifiers
+## DOI
 
+10.5281/zenodo.21314881
+
+## DOI URL
+
+https://doi.org/10.5281/zenodo.21314881
+
+## Related identifiers
 - https://github.com/MonicaCT/economic-complexity-structural-transformation-lac
 
 ## Access rights
@@ -55,4 +62,4 @@ Open Access
 
 ## Notes
 
-No DOI, Concept DOI, ORCID or affiliation should be added until verified explicitly.
+The version DOI has been assigned by Zenodo: 10.5281/zenodo.21314881. No Concept DOI, ORCID or affiliation should be added until verified explicitly.

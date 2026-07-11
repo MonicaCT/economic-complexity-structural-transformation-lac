@@ -1,5 +1,7 @@
 # Economic Complexity and Structural Transformation in Latin America
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21314881.svg)](https://doi.org/10.5281/zenodo.21314881)
+
 **Productive capabilities, divergent development paths and diversification opportunities for Bolivia**
 
 Repository: <https://github.com/MonicaCT/economic-complexity-structural-transformation-lac>
@@ -110,11 +112,14 @@ The original local source folders contain roughly 168.3 GB and are not included 
 
 The project uses export data, so it does not observe non-exported capabilities, services, informal production, environmental constraints, firm-level readiness or political economy. Opportunity scores guide screening; they do not select investments. Econometric models are descriptive associations, not causal estimates.
 
-## Citation
+## DOI
 
+https://doi.org/10.5281/zenodo.21314881
+
+## Citation
 Cueto Tapia, M. (2026). *Economic Complexity and Structural Transformation in Latin America: Productive Capabilities, Divergent Development Paths, and Diversification Opportunities for Bolivia* (Version 1.0.1) [Research software and reproducible analysis]. GitHub. <https://github.com/MonicaCT/economic-complexity-structural-transformation-lac>
 
-Use `CITATION.cff` for machine-readable citation metadata. No DOI is listed because no DOI has been created.
+Use `CITATION.cff` for machine-readable citation metadata, including the Zenodo DOI.
 
 ## Author
 

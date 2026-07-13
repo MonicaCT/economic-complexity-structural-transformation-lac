@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economic Complexity and Structural Transformation in Latin America</title>
+<style>
+:root{--ink:#1f2933;--paper:#f7f5f0;--red:#b23a48;--blue:#2f5f8f;--teal:#1f7a8c;--orange:#e58f2a;--gray:#d9dde3;--white:#fffdf8}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}header{background:var(--white);border-bottom:1px solid var(--gray);padding:3rem max(5vw,1.25rem)}main{max-width:1180px;margin:auto;padding:1.4rem}h1{font-size:clamp(2rem,4vw,4.3rem);line-height:1.05;margin:.2rem 0 1rem}h2{margin:0 0 .7rem;font-size:1.55rem}.eyebrow{color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:.06em}.lede{max-width:920px;font-size:1.15rem}.links a{display:inline-block;margin:.45rem .45rem .15rem 0;padding:.62rem .82rem;border:1px solid var(--ink);border-radius:6px;background:white;color:var(--ink);font-weight:760;text-decoration:none}.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:.8rem;margin:1rem 0}.kpi{background:white;border-top:4px solid var(--teal);border-radius:6px;padding:.85rem;box-shadow:0 2px 14px #1f293312}.kpi span{display:block;color:#5d6875;font-size:.88rem}.kpi strong{display:block;color:var(--blue);font-size:1.28rem}section{padding:2rem 0;border-bottom:1px solid var(--gray)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}.wide{grid-column:1/-1}figure{margin:0;background:white;border:1px solid var(--gray);border-radius:6px;padding:.85rem}img{display:block;width:100%;height:auto}figcaption{font-weight:800;margin-top:.55rem;color:var(--blue)}.note{color:#5b6570;font-size:.92rem}.table-wrap{overflow:auto;background:white;border:1px solid var(--gray);border-radius:6px}table{width:100%;min-width:720px;border-collapse:collapse}th,td{text-align:left;padding:.62rem;border-bottom:1px solid #eceff3}th{background:#edf2f7;color:var(--blue)}footer{padding:2rem;text-align:center;color:#68717c}@media(max-width:740px){main{padding:1rem}.links a{display:block}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="eyebrow">Trade data, complexity indicators and opportunity screening</div>
+<h1>Economic Complexity and Structural Transformation in Latin America</h1>
+<p class="lede">Reproducible trade and economic-complexity analytics for identifying structural transformation patterns and export-diversification opportunities in Latin America, with a detailed application to Bolivia.</p>
+<nav class="links">
+<a href="https://github.com/MonicaCT/economic-complexity-structural-transformation-lac">Repository</a>
+<a href="https://github.com/MonicaCT/economic-complexity-structural-transformation-lac/blob/main/paper/main.html">Paper</a>
+<a href="https://github.com/MonicaCT/economic-complexity-structural-transformation-lac/blob/main/paper/policy_brief.html">Policy brief</a>
+<a href="https://github.com/MonicaCT/economic-complexity-structural-transformation-lac/blob/main/docs/METHODOLOGY.md">Methodology</a>
+<a href="https://doi.org/10.5281/zenodo.21314881">DOI</a>
+</nav>
+</header>
+<main>
+<section id="overview">
+<h2>Executive Overview</h2>
+<div class="kpis">
+<article class="kpi"><span>Observations</span><strong>6,497,429</strong></article>
+<article class="kpi"><span>Countries</span><strong>242</strong></article>
+<article class="kpi"><span>HS92 products</span><strong>1,243</strong></article>
+<article class="kpi"><span>Period</span><strong>1995-2023</strong></article>
+<article class="kpi"><span>Bolivia ECI 2023</span><strong>-1.236</strong></article>
+<article class="kpi"><span>Strategic bets</span><strong>11</strong></article>
+</div>
+<figure class="wide"><img src="https://raw.githubusercontent.com/MonicaCT/economic-complexity-structural-transformation-lac/main/assets/dashboard-screenshots/01_executive_overview.png" alt="Dashboard executive overview"><figcaption>Executive dashboard overview</figcaption><p class="note">Static capture reused from the existing dashboard visual checks. The Shiny dashboard code is available locally in <code>dashboard/app.R</code>.</p></figure>
+</section>
+<section id="dashboard-gallery">
+<h2>Dashboard Gallery</h2>
+<div class="grid">
+<figure><img src="https://raw.githubusercontent.com/MonicaCT/economic-complexity-structural-transformation-lac/main/assets/dashboard-screenshots/02_trade_structure.png" alt="Bolivia trade structure"><figcaption>Bolivia trade structure</figcaption><p class="note">Country explorer view for Bolivia, using prepared dashboard outputs.</p></figure>
+<figure><img src="https://raw.githubusercontent.com/MonicaCT/economic-complexity-structural-transformation-lac/main/assets/dashboard-screenshots/03_product_space.png" alt="Product Space"><figcaption>Product Space diagnostics</figcaption><p class="note">Network diagnostics from the already generated Product Space outputs.</p></figure>
+<figure><img src="https://raw.githubusercontent.com/MonicaCT/economic-complexity-structural-transformation-lac/main/assets/dashboard-screenshots/04_bolivia_opportunities.png" alt="Bolivia opportunity lab"><figcaption>Bolivia Opportunity Lab</figcaption><p class="note">Opportunity-screening interface for feasibility and transformation tradeoffs.</p></figure>
+</div>
+</section>
+<section id="figures">
+<h2>Analytical Figures</h2>
+<div class="grid">
+<figure><img src="https://raw.githubusercontent.com/MonicaCT/economic-complexity-structural-transformation-lac/main/outputs/figures/png/01_eci_latin_america_trends.png" alt="ECI trajectories"><figcaption>Regional ECI trajectories</figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/MonicaCT/economic-complexity-structural-transformation-lac/main/outputs/figures/png/03_diversity_concentration.png" alt="Diversification and concentration"><figcaption>Diversification and concentration</figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/MonicaCT/economic-complexity-structural-transformation-lac/main/outputs/figures/png/06_bolivia_product_space.png" alt="Bolivia Product Space"><figcaption>Bolivia Product Space</figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/MonicaCT/economic-complexity-structural-transformation-lac/main/outputs/figures/png/08_bolivia_opportunity_matrix.png" alt="Opportunity matrix"><figcaption>Diversification opportunity matrix</figcaption></figure>
+</div>
+</section>
+<section id="tables">
+<h2>Executive Tables</h2>
+<p class="note">Tables summarize existing final CSV outputs. No indicators or model results are recalculated in this static portfolio page.</p>
+<div class="table-wrap"><table><thead><tr><th>Product</th><th>Product name</th><th>Sector</th><th>Feasibility</th><th>Transformation</th><th>Decision</th></tr></thead><tbody>
+<tr><td>7326</td><td>Other articles of iron or steel</td><td>Metals</td><td>0.676</td><td>0.763</td><td>Keep</td></tr>
+<tr><td>8708</td><td>Parts and accessories of motor vehicles</td><td>Transport equipment</td><td>0.638</td><td>0.747</td><td>Keep</td></tr>
+<tr><td>4016</td><td>Other articles of vulcanized rubber</td><td>Plastics and rubber</td><td>0.615</td><td>0.727</td><td>Keep</td></tr>
+<tr><td>5603</td><td>Nonwovens</td><td>Textiles and apparel</td><td>0.592</td><td>0.719</td><td>Keep</td></tr>
+<tr><td>8703</td><td>Motor cars and passenger vehicles</td><td>Transport equipment</td><td>0.627</td><td>0.717</td><td>Keep</td></tr>
+</tbody></table></div>
+<p class="note">Full tables: <a href="https://github.com/MonicaCT/economic-complexity-structural-transformation-lac/blob/main/docs/executive_tables.md">docs/executive_tables.md</a>.</p>
+</section>
+<section id="workflow">
+<h2>Data and Analytical Workflow</h2>
+<p>Raw public trade data -> validation and harmonization -> country-product analytical panel -> RCA, ECI, PCI and network indicators -> opportunity screening -> figures, tables, dashboard and reports.</p>
+<p class="note">Coverage: 6,497,429 country-product-year observations, 242 countries, 1,243 HS92 four-digit products and 1995-2023. Large raw source folders are not distributed in GitHub.</p>
+</section>
+</main>
+<footer><a href="https://github.com/MonicaCT">Back to Monica Cueto Tapia's research portfolio</a></footer>
+</body>
+</html>

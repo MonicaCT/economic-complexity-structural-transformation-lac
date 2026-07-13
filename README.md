@@ -3,26 +3,47 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21314881.svg)](https://doi.org/10.5281/zenodo.21314881)
 [![Release](https://img.shields.io/badge/release-v1.0.1-7B2CBF)](https://github.com/MonicaCT/economic-complexity-structural-transformation-lac/releases/tag/v1.0.1)
 
-**Productive capabilities, divergent development paths and diversification opportunities for Bolivia**
+Reproducible trade and economic-complexity analytics for identifying structural transformation patterns and export-diversification opportunities in Latin America, with a detailed application to Bolivia.
 
 Repository: <https://github.com/MonicaCT/economic-complexity-structural-transformation-lac>
 
-![Repository banner](docs/assets/repository_banner.png)
+![Economic complexity dashboard overview](assets/dashboard-screenshots/01_executive_overview.png)
 
-[![Dashboard](https://img.shields.io/badge/Dashboard-Code-B23A48?style=for-the-badge)](dashboard/)
+[![Live Dashboard](https://img.shields.io/badge/Live-Dashboard-B23A48?style=for-the-badge)](docs/index.html)
 [![Paper HTML](https://img.shields.io/badge/Paper-HTML-16324F?style=for-the-badge)](paper/main.html)
 [![Policy Brief](https://img.shields.io/badge/Policy-Brief-F28F3B?style=for-the-badge)](paper/policy_brief.html)
 [![Methodology](https://img.shields.io/badge/View-Methodology-6B7280?style=for-the-badge)](docs/METHODOLOGY.md)
 [![Reproduce](https://img.shields.io/badge/Reproduce-Analysis-264653?style=for-the-badge)](#reproducibility)
 [![DOI](https://img.shields.io/badge/DOI-Zenodo-1682D4?style=for-the-badge)](https://doi.org/10.5281/zenodo.21314881)
 
-[![Repository](https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github)](https://github.com/MonicaCT/economic-complexity-structural-transformation-lac)
-[![Paper PDF](https://img.shields.io/badge/Paper-PDF-4C6E91?style=for-the-badge)](paper/main.pdf)
-[![Latest Release](https://img.shields.io/badge/Release-v1.0.1-7B2CBF?style=for-the-badge)](https://github.com/MonicaCT/economic-complexity-structural-transformation-lac/releases/tag/v1.0.1)
+## Data analyst portfolio snapshot
 
-## Research question
+| KPI | Verified value |
+|---|---:|
+| Country-product-year observations | 6,497,429 |
+| Countries | 242 |
+| HS92 four-digit products | 1,243 |
+| Period | 1995-2023 |
+| Bolivia ECI, 2023 | -1.236 |
+| Bolivia strategic bets | 11 |
 
-How do economic complexity, export diversification and Product Space proximity characterize divergent structural transformation patterns in Latin America, and what do they imply for Bolivia's feasible diversification opportunities?
+## Five main findings
+
+1. The public processed panel covers 6,497,429 country-product-year observations across 242 countries, 1,243 HS92 products and 1995-2023.
+2. Bolivia's 2023 export basket records ECI = -1.236, diversity = 82, HHI = 0.124 and primary export share = 62.7 percent.
+3. The 2023 Product Space contains 701,978 analytical positive edges and a 698-edge visual subset used for dashboard interpretation.
+4. The relative Bolivia opportunity screen identifies 11 strategic bets, 239 incremental extensions and 107 transformational long shots.
+5. Fixed-effects models are presented as observational associations with country and year fixed effects, not causal estimates.
+
+## Tools used
+
+R, Shiny, Quarto, data.table, ggplot2, plotly, DT, GitHub Pages, Markdown, reproducibility scripts and validation reports.
+
+## Capabilities demonstrated
+
+Trade data processing; Country-product panel construction; Data validation; Economic complexity indicators; Network analysis; Opportunity prioritization; Interactive dashboards; Reproducible reporting; Policy-oriented data communication.
+
+## Research questionHow do economic complexity, export diversification and Product Space proximity characterize divergent structural transformation patterns in Latin America, and what do they imply for Bolivia's feasible diversification opportunities?
 
 The repository links economic complexity, diversification, structural transformation and economic performance through a reproducible Latin American panel, with a detailed Bolivia application that separates nearby incremental extensions from more distant high-transformation opportunities.
 
@@ -65,19 +86,59 @@ Latin America's development challenge is not only to grow, but to build broader 
 
 ## Main figures
 
+The figures below reuse existing final outputs. No figure, model or indicator is regenerated in this portfolio update.
+
+### Regional complexity trajectories
+
 ![ECI trajectories](outputs/figures/png/01_eci_latin_america_trends.png)
+
+Source: `outputs/figures/png/01_eci_latin_america_trends.png`. Period: 1995-2023. Method note: ECI is standardized within each year, so trends show relative annual position.
+
+### Complexity and income positioning
+
+![Complexity and income](outputs/figures/png/02_complexity_income.png)
+
+Source: `outputs/figures/png/02_complexity_income.png`. Period: final analytical panel output. Method note: the relationship is descriptive and should not be read as causal.
+
+### Diversification and concentration
+
+![Diversity and concentration](outputs/figures/png/03_diversity_concentration.png)
+
+Source: `outputs/figures/png/03_diversity_concentration.png`. Period: 1995-2023 analytical panel. Method note: diversity counts products with RCA above the project threshold; HHI summarizes export concentration.
+
+### Latin American export composition
+
+![LAC export composition](outputs/figures/png/04_lac_export_composition.png)
+
+Source: `outputs/figures/png/04_lac_export_composition.png`. Period: 1995-2023. Method note: sector composition is aggregated from HS92 product groups.
+
+### Bolivia structural dashboard
+
+![Bolivia structural dashboard](outputs/figures/png/05_bolivia_structural_dashboard.png)
+
+Source: `outputs/figures/png/05_bolivia_structural_dashboard.png`. Period: Bolivia 2023 and historical panel context. Method note: indicators are screening metrics, not policy prescriptions.
+
+### Bolivia Product Space
 
 ![Bolivia Product Space](outputs/figures/png/06_bolivia_product_space.png)
 
+Source: `outputs/figures/png/06_bolivia_product_space.png`. Period: 2023 Product Space. Method note: the visual network is a reduced subset of the analytical proximity matrix.
+
+### Bolivia density and PCI
+
+![Bolivia density PCI](outputs/figures/png/07_bolivia_density_pci.png)
+
+Source: `outputs/figures/png/07_bolivia_density_pci.png`. Period: 2023 opportunity screen. Method note: density measures proximity to Bolivia's current capabilities.
+
+### Diversification opportunity matrix
+
 ![Opportunity matrix](outputs/figures/png/08_bolivia_opportunity_matrix.png)
 
-![Top opportunities](outputs/figures/png/09_bolivia_top_opportunities.png)
+Source: `outputs/figures/png/08_bolivia_opportunity_matrix.png`. Period: Bolivia 2023. Method note: opportunity categories support prioritization for further review, not automatic investment selection.
 
-![Model coefficients](outputs/figures/png/10_model_coefficients.png)
+See [executive tables](docs/executive_tables.md) for recruiter-facing summaries of indicators, rankings and Bolivia opportunities.
 
-## Data
-
-The validated analytical panel covers:
+## DataThe validated analytical panel covers:
 
 - 6,497,429 country-product-year observations;
 - 242 countries;
@@ -85,6 +146,23 @@ The validated analytical panel covers:
 - 1995-2023.
 
 The original local source folders contain roughly 168.3 GB and are not included in GitHub. Large processed caches are also ignored. Public samples and validation outputs are included so the repository can be inspected without private local data.
+
+## Data and analytical workflow
+
+```mermaid
+flowchart TD
+  A[Raw public trade data] --> B[Validation and harmonization]
+  B --> C[Country-product analytical panel]
+  C --> D[RCA, ECI, PCI and network indicators]
+  D --> E[Opportunity screening]
+  E --> F[Figures, tables, dashboard and reports]
+```
+
+- Sources: public HS92 country-product-year trade data and macro/context indicators documented in the methodology.
+- Unit of observation: country-product-year for the trade panel; country-year and product-year for derived indicators.
+- Coverage: 6,497,429 observations, 242 countries, 1,243 HS92 four-digit products and 1995-2023.
+- Main transformations: harmonization, RCA matrix construction, ECI/PCI estimation, Product Space proximity, density and opportunity screening.
+- Limits: original large source folders are not distributed; public samples and validation outputs are included for inspection and demo execution.
 
 ## Methodology
 
@@ -116,9 +194,14 @@ If PDF artifacts are absent after cloning, regenerate them with `Rscript scripts
 
 ## Dashboard
 
-![Dashboard preview](docs/assets/dashboard_preview.png)
+![Dashboard preview](assets/dashboard-screenshots/01_executive_overview.png)
 
-The Shiny dashboard is a local dashboard application, not a public live site. It includes regional ECI trajectories, a Bolivia Opportunity Lab, Product Space diagnostics, econometric model tables and validation notes.
+The repository includes a static GitHub Pages portfolio view and local Shiny dashboard code. The Shiny dashboard includes regional ECI trajectories, a Bolivia Opportunity Lab, Product Space diagnostics, econometric model tables and validation notes.
+
+- Static portfolio gallery: [docs/index.html](docs/index.html)
+- Local Shiny source: [dashboard/app.R](dashboard/app.R)
+- Main sections: Executive Overview, Country Explorer, Product Explorer, Product Space, Bolivia Opportunity Lab, Econometric Evidence and Data and Methods.
+- Use: open the static page for recruiter-facing results, or run the Shiny dashboard locally for interactive filtering.
 
 ```powershell
 Rscript scripts/run_dashboard.R
@@ -126,9 +209,7 @@ Rscript scripts/run_dashboard.R
 
 Dashboard source: [dashboard/app.R](dashboard/app.R).
 
-## Repository structure
-
-```text
+## Repository structure```text
 R/                  Main R pipeline and demo script
 scripts/            Validation, rendering and final-check scripts
 data/sample/        Small public sample data

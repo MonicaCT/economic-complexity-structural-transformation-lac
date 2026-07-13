@@ -9,7 +9,7 @@ Repository: <https://github.com/MonicaCT/economic-complexity-structural-transfor
 
 ![Economic complexity dashboard overview](assets/dashboard-screenshots/01_executive_overview.png)
 
-[![Live Dashboard](https://img.shields.io/badge/Live-Dashboard-B23A48?style=for-the-badge)](docs/index.html)
+[![Live Dashboard](https://img.shields.io/badge/Live-Dashboard-B23A48?style=for-the-badge)](https://monicact.github.io/economic-complexity-structural-transformation-lac/)
 [![Paper HTML](https://img.shields.io/badge/Paper-HTML-16324F?style=for-the-badge)](paper/main.html)
 [![Policy Brief](https://img.shields.io/badge/Policy-Brief-F28F3B?style=for-the-badge)](paper/policy_brief.html)
 [![Methodology](https://img.shields.io/badge/View-Methodology-6B7280?style=for-the-badge)](docs/METHODOLOGY.md)
@@ -198,7 +198,7 @@ If PDF artifacts are absent after cloning, regenerate them with `Rscript scripts
 
 The repository includes a static GitHub Pages portfolio view and local Shiny dashboard code. The Shiny dashboard includes regional ECI trajectories, a Bolivia Opportunity Lab, Product Space diagnostics, econometric model tables and validation notes.
 
-- Static portfolio gallery: [docs/index.html](docs/index.html)
+- Static portfolio gallery: [GitHub Pages](https://monicact.github.io/economic-complexity-structural-transformation-lac/)
 - Local Shiny source: [dashboard/app.R](dashboard/app.R)
 - Main sections: Executive Overview, Country Explorer, Product Explorer, Product Space, Bolivia Opportunity Lab, Econometric Evidence and Data and Methods.
 - Use: open the static page for recruiter-facing results, or run the Shiny dashboard locally for interactive filtering.

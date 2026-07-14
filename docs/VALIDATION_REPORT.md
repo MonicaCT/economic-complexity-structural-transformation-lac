@@ -73,3 +73,33 @@ This update only changes presentation and documentation files allowed for this p
 ## Warning
 
 GitHub Pages is not enabled or not currently serving this repository endpoint. The static gallery is ready in `docs/index.html`, but public serving may require enabling GitHub Pages in repository settings.
+## 2026-07-14 Flagship documentation layer
+
+Scope: minimum flagship standard for recruiter-facing economic-complexity documentation and SQL contracts.
+
+### Files added
+
+- `docs/EXECUTIVE_SUMMARY.md`
+- `docs/VARIABLE_CATALOG.md`
+- `docs/DATA_QUALITY_REPORT.md`
+- `docs/RECRUITER_GUIDE.md`
+- `docs/STAKEHOLDER_REQUIREMENTS.md`
+- `docs/KPI_DICTIONARY.md`
+- `docs/DATA_MODEL.md`
+- `docs/FLAGSHIP_STATUS.md`
+- `sql/ddl/001_create_dimensions.sql`
+- `sql/ddl/002_create_facts.sql`
+- `sql/marts/001_country_complexity_panel.sql`
+- `sql/marts/002_product_complexity_panel.sql`
+- `sql/marts/003_bolivia_opportunity_mart.sql`
+- `sql/marts/004_product_space_edges.sql`
+- `sql/validation/001_data_integrity_checks.sql`
+- `sql/validation/002_indicator_range_checks.sql`
+- `sql/validation/003_product_space_checks.sql`
+
+### Validation notes
+
+- Source files were limited to existing public derived outputs and documentation.
+- SQL files are declarative DuckDB contracts and were not executed.
+- No raw data, processed outputs, paper, policy brief, Shiny dashboard, figures, tables, RCA, ECI, PCI, Product Space or econometric results were modified.
+- Documentation includes no local Windows paths, credentials or private data.

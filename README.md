@@ -10,6 +10,7 @@ Repository: <https://github.com/MonicaCT/economic-complexity-structural-transfor
 ![Economic complexity dashboard overview](assets/dashboard-screenshots/01_executive_overview.png)
 
 [![Live Dashboard](https://img.shields.io/badge/Live-Dashboard-B23A48?style=for-the-badge)](https://monicact.github.io/economic-complexity-structural-transformation-lac/)
+[![Interactive Explorer](https://img.shields.io/badge/Interactive-Explorer-1F7A8C?style=for-the-badge)](https://monicact.github.io/economic-complexity-structural-transformation-lac/explore/)
 [![Paper HTML](https://img.shields.io/badge/Paper-HTML-16324F?style=for-the-badge)](paper/main.html)
 [![Policy Brief](https://img.shields.io/badge/Policy-Brief-F28F3B?style=for-the-badge)](paper/policy_brief.html)
 [![Methodology](https://img.shields.io/badge/View-Methodology-6B7280?style=for-the-badge)](docs/METHODOLOGY.md)

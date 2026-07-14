@@ -103,3 +103,40 @@ Scope: minimum flagship standard for recruiter-facing economic-complexity docume
 - SQL files are declarative DuckDB contracts and were not executed.
 - No raw data, processed outputs, paper, policy brief, Shiny dashboard, figures, tables, RCA, ECI, PCI, Product Space or econometric results were modified.
 - Documentation includes no local Windows paths, credentials or private data.
+
+## 2026-07-14 Interactive explorer layer
+
+Scope: lightweight static explorer for GitHub Pages using existing final derived outputs.
+
+### Files added or updated
+
+- `README.md`
+- `docs/index.html`
+- `docs/explore/index.html`
+- `docs/explore/README.md`
+- `docs/explore/assets/css/explore.css`
+- `docs/explore/assets/js/explore.js`
+- `docs/explore/data/country_complexity.csv`
+- `docs/explore/data/product_complexity_2023.csv`
+- `docs/explore/data/bolivia_opportunities.csv`
+- `docs/explore/data/bolivia_strategic_bets.csv`
+- `docs/explore/data/product_space_edges.csv`
+- `docs/explore/data/product_space_nodes.csv`
+- `docs/explore/data/data_quality.csv`
+- `docs/explore/data/eci_validation.csv`
+- `docs/explore/data/pci_validation.csv`
+
+### Explorer views
+
+- Executive Overview
+- Country Explorer
+- Product Complexity Explorer
+- Product Space
+- Bolivia Opportunity Lab
+- Data Quality and Methodology
+
+### Validation notes
+
+- Explorer datasets are lightweight presentation extracts from existing final outputs.
+- No raw data, models, indicators, figures, tables, paper, policy brief or Shiny dashboard code were modified or regenerated.
+- Navigation links use relative paths for the public site and GitHub links for repository-hosted reports.

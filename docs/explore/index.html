@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economic Complexity Interactive Explorer</title>
+<link rel="stylesheet" href="assets/css/explore.css">
+</head>
+<body>
+<header class="site-header">
+  <div>
+    <p class="eyebrow">Interactive portfolio explorer</p>
+    <h1>Economic Complexity and Structural Transformation in Latin America</h1>
+    <p class="lede">A lightweight public explorer built from existing final outputs: country complexity, product complexity, Product Space diagnostics and Bolivia opportunity screening.</p>
+  </div>
+  <nav class="top-links" aria-label="Project navigation">
+    <a href="../index.html">Project Home</a>
+    <a href="https://github.com/MonicaCT/economic-complexity-structural-transformation-lac">Repository</a>
+    <a href="https://github.com/MonicaCT/economic-complexity-structural-transformation-lac/blob/main/paper/main.html">Paper</a>
+    <a href="https://github.com/MonicaCT/economic-complexity-structural-transformation-lac/blob/main/paper/policy_brief.html">Policy Brief</a>
+    <a href="https://github.com/MonicaCT/economic-complexity-structural-transformation-lac/blob/main/docs/METHODOLOGY.md">Methodology</a>
+    <a href="https://monicact.github.io/MonicaCT/">Back to Portfolio</a>
+  </nav>
+</header>
+
+<main>
+  <nav class="view-tabs" aria-label="Explorer views">
+    <button class="tab is-active" data-view="overview">Executive Overview</button>
+    <button class="tab" data-view="country">Country Explorer</button>
+    <button class="tab" data-view="product">Product Complexity Explorer</button>
+    <button class="tab" data-view="space">Product Space</button>
+    <button class="tab" data-view="bolivia">Bolivia Opportunity Lab</button>
+    <button class="tab" data-view="quality">Data Quality and Methodology</button>
+  </nav>
+
+  <section id="view-overview" class="view is-active" aria-labelledby="overview-title">
+    <div class="section-heading">
+      <p class="eyebrow">Portfolio signal</p>
+      <h2 id="overview-title">Executive Overview</h2>
+    </div>
+    <div id="overview-kpis" class="kpi-grid"></div>
+    <div class="split">
+      <article class="panel">
+        <h3>Opportunity categories</h3>
+        <div id="category-bars" class="bars"></div>
+      </article>
+      <article class="panel">
+        <h3>Analytical workflow</h3>
+        <ol class="workflow">
+          <li>Public trade-derived final outputs</li>
+          <li>Country-product panel validation</li>
+          <li>RCA, ECI, PCI and Product Space indicators</li>
+          <li>Bolivia opportunity screening</li>
+          <li>Paper, policy brief, dashboard and explorer</li>
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <section id="view-country" class="view" aria-labelledby="country-title">
+    <div class="section-heading">
+      <p class="eyebrow">Country-year panel</p>
+      <h2 id="country-title">Country Explorer</h2>
+    </div>
+    <div class="controls">
+      <label>Country <select id="country-select"></select></label>
+      <label>Region <select id="region-select"></select></label>
+    </div>
+    <div class="kpi-grid compact" id="country-kpis"></div>
+    <div class="panel">
+      <h3>ECI trajectory</h3>
+      <div id="country-chart" class="chart"></div>
+    </div>
+    <div class="panel">
+      <h3>Latest country ranking</h3>
+      <div id="country-table" class="table-wrap"></div>
+    </div>
+  </section>
+
+  <section id="view-product" class="view" aria-labelledby="product-title">
+    <div class="section-heading">
+      <p class="eyebrow">Product complexity</p>
+      <h2 id="product-title">Product Complexity Explorer</h2>
+    </div>
+    <div class="controls">
+      <label>Sector <select id="sector-select"></select></label>
+      <label>Search <input id="product-search" type="search" placeholder="Product code or section"></label>
+    </div>
+    <div class="panel">
+      <h3>Top product complexity scores</h3>
+      <div id="product-bars" class="chart"></div>
+    </div>
+    <div class="panel">
+      <h3>Product table</h3>
+      <div id="product-table" class="table-wrap"></div>
+    </div>
+  </section>
+
+  <section id="view-space" class="view" aria-labelledby="space-title">
+    <div class="section-heading">
+      <p class="eyebrow">Network diagnostics</p>
+      <h2 id="space-title">Product Space</h2>
+    </div>
+    <div class="controls">
+      <label>Sector <select id="space-sector-select"></select></label>
+      <label>Minimum proximity <input id="proximity-min" type="range" min="0" max="1" step="0.01" value="0"></label>
+    </div>
+    <div class="panel network-panel">
+      <h3>Visual edge subset</h3>
+      <div id="product-space-network" class="network"></div>
+    </div>
+  </section>
+
+  <section id="view-bolivia" class="view" aria-labelledby="bolivia-title">
+    <div class="section-heading">
+      <p class="eyebrow">Bolivia 2023</p>
+      <h2 id="bolivia-title">Bolivia Opportunity Lab</h2>
+    </div>
+    <div class="controls">
+      <label>Category <select id="bolivia-category-select"></select></label>
+      <label>Search <input id="bolivia-search" type="search" placeholder="Product code or name"></label>
+      <a class="download-link" href="data/bolivia_opportunities.csv" download>Download CSV</a>
+    </div>
+    <div class="panel">
+      <h3>Feasibility and transformation</h3>
+      <div id="bolivia-scatter" class="chart"></div>
+    </div>
+    <div class="panel">
+      <h3>Opportunity table</h3>
+      <div id="bolivia-table" class="table-wrap"></div>
+    </div>
+  </section>
+
+  <section id="view-quality" class="view" aria-labelledby="quality-title">
+    <div class="section-heading">
+      <p class="eyebrow">Validation and limits</p>
+      <h2 id="quality-title">Data Quality and Methodology</h2>
+    </div>
+    <div class="split">
+      <article class="panel">
+        <h3>Data-quality metrics</h3>
+        <div id="quality-table" class="table-wrap"></div>
+      </article>
+      <article class="panel">
+        <h3>Methodological guardrails</h3>
+        <ul class="plain-list">
+          <li>ECI and PCI are standardized within year.</li>
+          <li>Opportunity rankings are screening tools.</li>
+          <li>Product Space visualization uses a reduced edge subset.</li>
+          <li>Fixed-effects models are observational associations.</li>
+          <li>Raw source data are not published in this explorer.</li>
+        </ul>
+      </article>
+    </div>
+    <div class="panel">
+      <h3>Validation summaries</h3>
+      <div id="validation-summary" class="table-wrap"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>Built from existing final outputs. No indicators, models, figures or tables are recalculated by this page.</span>
+</footer>
+
+<script src="assets/js/explore.js"></script>
+</body>
+</html>
